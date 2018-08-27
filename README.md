@@ -1,9 +1,3 @@
-## Writeup Template
-
-### You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
-
----
-
 **Advanced Lane Finding Project**
 
 The goals / steps of this project are the following:
@@ -37,8 +31,7 @@ The goals / steps of this project are the following:
 
 ### Writeup / README
 
-#### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one.  You can submit your writeup as markdown or pdf.  [Here](https://github.com/udacity/CarND-Advanced-Lane-Lines/blob/master/writeup_template.md) is a template writeup for this project you can use as a guide and a starting point.  
-
+#### 1. README that includes all the rubric points and how I addressed each one
 You're reading it!
 
 ### Camera Calibration
@@ -100,7 +93,7 @@ I verified that my perspective transform was working as expected by drawing the 
 ![alt text][image4]
 
 #### 4. Region of Interest and mask white & yellow color
-I use 2 masking technique:
+I use 2 masking techniques:
 - Region of Interest to focus only on the center of each image which likely has the lane line
 ```python
 def get_vertices(image):
@@ -139,23 +132,26 @@ For finding lane-line pixels, I use the histogram sliding window technique, the 
 - minpix = 40
 
 Histogram of the test image
+
 ![alt text][image6]
 
 Sliding window polyfit
+
 ![alt text][image7]
 
 Once found the line, I search around that area to draw a line in the next frame
+
 ![alt text][image8]
 
 #### 6.Calculate the radius of curvature of the lane and the position of the vehicle with respect to center.
 
-I do this in function calculate_curv_rad_and_center_dist. Based on the histogram, I guesstimate 100 pixel according to y and 400 pixel according to x
-Then based on binary image, polynomial fit, and L and R lane pixel indices ... I apply the formula f(y)=Ayy+By+C to find the curvature as well as car position on the test image
+I do this in function `calculate_curv_rad_and_center_dist`. Based on the histogram, I guesstimate 100 pixel according to y and 400 pixel according to x
+Then based on binary image, polynomial fit, and L and R lane pixel indices ... I apply the formula `f(y)=Ayy+By+C` to find the curvature as well as car position on the test image
 
 
 #### 7. Plotted back down onto the road such that the lane area is identified clearly.
 
-I implemented this step in function draw_real_world which takes in original_img, binary_img, left_fit, right_fit, M_inverse
+I implemented this step in function `draw_real_world` which takes in original_img, binary_img, left_fit, right_fit, M_inverse
 
 
 ![alt text][image9]
