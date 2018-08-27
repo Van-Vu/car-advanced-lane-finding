@@ -19,15 +19,15 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./writeup_images/chessboard_distort.jpg "ChessboardUndistorted"
-[image2]: ./writeup_images/testimage_distort.jpg "TestImageUndistorted"
-[image3]: ./writeup_images/threshold_binary.jpg "Threshold Binary"
-[image4]: ./writeup_images/warped_image.jpg "Warp Example"
-[image5]: ./writeup_images/masked_image.jpg "Masked Example"
-[image6]: ./writeup_images/histogram.jpg "histogram"
-[image7]: ./writeup_images/sliding_window.jpg "sliding window"
-[image8]: ./writeup_images/draw_line.jpg "draw line"
-[image9]: ./writeup_images/real_draw.jpg "real draw"
+[image1]: ./output_images/chessboard_distort.jpg "ChessboardUndistorted"
+[image2]: ./output_images/testimage_distort.jpg "TestImageUndistorted"
+[image3]: ./output_images/threshold_binary.jpg "Threshold Binary"
+[image4]: ./output_images/warped_image.jpg "Warp Example"
+[image5]: ./output_images/masked_image.jpg "Masked Example"
+[image6]: ./output_images/histogram.jpg "histogram"
+[image7]: ./output_images/sliding_window.jpg "sliding window"
+[image8]: ./output_images/draw_line.jpg "draw line"
+[image9]: ./output_images/real_draw.jpg "real draw"
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
 
@@ -164,7 +164,8 @@ I implemented this step in function draw_real_world which takes in original_img,
 
 ### Pipeline (video)
 
-Here's a [link to my video result](https://youtu.be/hKtBd94Xa10)
+Here's a [youtube link to my video result](https://youtu.be/hKtBd94Xa10)
+or [local video](./project_video_output_final.mp4)
 
 ---
 
